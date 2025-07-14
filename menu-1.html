@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - McDonald's Philippines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">McDonald's</span>
+                <span class="logo-country">Philippines</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="menu.html" class="nav-link active">Our Menu</a>
+                <button class="nav-btn">Order Now</button>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our <span class="highlight">Menu</span></h1>
+            <p>Discover our delicious selection of burgers, chicken, breakfast items, and more</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="menu-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" id="menu-search" placeholder="Search menu items...">
+                </div>
+                
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All Items</button>
+                    <button class="filter-btn" data-category="burgers">Burgers</button>
+                    <button class="filter-btn" data-category="chicken">Chicken</button>
+                    <button class="filter-btn" data-category="breakfast">Breakfast</button>
+                    <button class="filter-btn" data-category="beverages">Beverages</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Items Grid -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-grid" id="menu-grid">
+                <!-- Burgers -->
+                <div class="menu-item" data-category="burgers">
+                    <div class="item-badge popular">⭐ Popular</div>
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=300&fit=crop" alt="Big Mac">
+                    <div class="item-calories">540 Cal</div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Big Mac with Regular Fries</h3>
+                            <span class="price">₱189</span>
+                        </div>
+                        <p>Two all-beef patties, special sauce, lettuce, cheese, pickles, onions on a sesame seed bun</p>
+                        <div class="item-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="favorite-btn">♡</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="burgers">
+                    <div class="item-badge popular">⭐ Popular</div>
+                    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop" alt="Quarter Pounder">
+                    <div class="item-calories">630 Cal</div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Quarter Pounder with Cheese</h3>
+                            <span class="price">₱199</span>
+                        </div>
+                        <p>Fresh beef quarter pound patty with cheese, onions, pickles, and ketchup</p>
+                        <div class="item-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="favorite-btn">♡</button>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                
+                <div class="menu-item" data-category="chicken">
+                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop" alt="McNuggets">
+                    <div class="item-calories">280 Cal</div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Chicken McTenders (6 pcs)</h3>
+                            <span class="price">₱119</span>
+                        </div>
+                        <p>Tender white meat chicken, seasoned and breaded</p>
+                        <div class="item-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="favorite-btn">♡</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="menu-item" data-category="breakfast">
+                    <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=400&h=300&fit=crop" alt="Hotcakes">
+                    <div class="item-calories">520 Cal</div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Hotcakes with Blue Berry</h3>
+                            <span class="price">₱99</span>
+                        </div>
+                        <p>Three fluffy hotcakes with sausage patty and syrup</p>
+                        <div class="item-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="favorite-btn">♡</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Beverages -->
+                <div class="menu-item" data-category="beverages">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" alt="Iced Coffee">
+                    <div class="item-calories">140 Cal</div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Iced Coffee</h3>
+                            <span class="price">₱65</span>
+                        </div>
+                        <p>Premium roast coffee served over ice</p>
+                        <div class="item-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="favorite-btn">♡</button>
+                        </div>
+                    </div>
+                </div>
+                >
+            
+            <div class="no-results" id="no-results" style="display: none;">
+                <div class="no-results-content">
+                    <div class="no-results-icon">🔍</div>
+                    <h3>No items found</h3>
+                    <p>Try adjusting your search or filter criteria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Meals Section -->
+    <section class="value-meals">
+        <div class="container">
+            <div class="section-header">
+                <h2>Value Meals</h2>
+                <p>Complete meals at great prices</p>
+            </div>
+            
+            <div class="meals-grid">
+                <div class="meal-item">
+                    <h3>Big Mac Meal</h3>
+                    <div class="meal-price">₱249</div>
+                    <p>Big Mac + Fries + Drink</p>
+                    <div class="meal-savings">Save ₱29</div>
+                    <button class="order-meal-btn">Order Meal</button>
+                </div>
+                
+                <div class="meal-item">
+                    <h3>McSpicy Meal</h3>
+                    <div class="meal-price">₱229</div>
+                    <p>McSpicy + Fries + Drink</p>
+                    <div class="meal-savings">Save ₱25</div>
+                    <button class="order-meal-btn">Order Meal</button>
+                </div>
+                
+                <div class="meal-item">
+                    <h3>6pc McNuggets Meal</h3>
+                    <div class="meal-price">₱189</div>
+                    <p>6pc McNuggets + Fries + Drink</p>
+                    <div class="meal-savings">Save ₱35</div>
+                    <button class="order-meal-btn">Order Meal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutritional Info Banner -->
+    <section class="nutrition-banner">
+        <div class="container">
+            <h2>Nutritional Information</h2>
+            <p>We believe you have the right to know what's in your food</p>
+            <button class="nutrition-btn">View Nutrition Facts</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>McDonald's Philippines</h3>
+                    <p>Serving quality food and creating memorable experiences since 1981.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">McDelivery</a></li>
+                        <li><a href="#">Drive-Thru</a></li>
+                        <li><a href="#">Party Packages</a></li>
+                        <li><a href="#">Catering</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📞 8-MCDO (8-6236)</p>
+                        <p>📍 Makati City, Philippines</p>
+                        <p>🕒 24/7 Service</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 McDonald's Philippines. All rights reserved. | For educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

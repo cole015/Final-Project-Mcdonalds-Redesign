@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Philippines - I'm Lovin' It</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">McDonald's</span>
+                <span class="logo-country">Philippines</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="menu.html" class="nav-link">Our Menu</a>
+                <button class="nav-btn">Order Now</button>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=1200&h=600&fit=crop')">
+                <div class="slide-content">
+                    <h1>I'm Lovin' It</h1>
+                    <p>Fresh ingredients, bold flavors, unforgettable moments</p>
+                    <button class="cta-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=1200&h=600&fit=crop')">
+                <div class="slide-content">
+                    <h1>Big Mac Attack</h1>
+                    <p>Two all-beef patties, special sauce, lettuce, cheese...</p>
+                    <button class="cta-btn">Try Now</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1200&h=600&fit=crop')">
+                <div class="slide-content">
+                    <h1>Happy Meal Fun</h1>
+                    <p>Making every kid's day special with toys and treats</p>
+                    <button class="cta-btn">Discover</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Featured Menu -->
+    <section class="featured-menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Favorites</h2>
+                <p>Discover the most loved items from our menu that keep customers coming back for more</p>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=300&fit=crop" alt="Big Mac">
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Big Mac</h3>
+                            <span class="price">₱189</span>
+                        </div>
+                        <p>Two all-beef patties, special sauce, lettuce, cheese, pickles, onions on a sesame seed bun</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop" alt="McSpicy">
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Chicken McTenders (6 pcs)</h3>
+                            <span class="price">₱119</span>
+                        </div>
+                        <p>Tender white meat chicken, seasoned and breaded</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=400&h=300&fit=crop" alt="Hotcakes">
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Hotcakes with Blue Berry</h3>
+                            <span class="price">₱99</span>
+                        </div>
+                        <p>Three fluffy hotcakes with sausage patty and syrup</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="menu.html" class="view-menu-btn">View Full Menu →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>How We Serve You</h2>
+                <p>Multiple ways to enjoy your McDonald's favorites</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">🏪</div>
+                    <h3>Dine-In</h3>
+                    <p>Enjoy your meal in our comfortable restaurants</p>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">🚗</div>
+                    <h3>Drive-Thru</h3>
+                    <p>Quick and convenient service without leaving your car</p>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">📱</div>
+                    <h3>McDelivery</h3>
+                    <p>Order online and get your food delivered to your door</p>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">🥡</div>
+                    <h3>Takeout</h3>
+                    <p>Order ahead and pick up when convenient for you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Locator -->
+    <section class="store-locator">
+        <div class="container">
+            <h2>Find McDonald's Near You</h2>
+            <p>Over 600 stores nationwide serving you 24/7</p>
+            <div class="locator-form">
+                <input type="text" placeholder="Enter your location" id="location-input">
+                <button class="find-btn">Find Stores</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>McDonald's Philippines</h3>
+                    <p>Serving quality food and creating memorable experiences since 1981.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">McDelivery</a></li>
+                        <li><a href="#">Drive-Thru</a></li>
+                        <li><a href="#">Party Packages</a></li>
+                        <li><a href="#">Catering</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📞 8-MCDO (8-6236)</p>
+                        <p>📍 Makati City, Philippines</p>
+                        <p>🕒 24/7 Service</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 McDonald's Philippines. All rights reserved. | For educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
